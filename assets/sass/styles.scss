@@ -1,0 +1,228 @@
+@import './vars';
+html,
+body {
+    font-size: $baseFontSizeSmallR;
+    font-family: 'Raleway', sans-serif;
+}
+@media (min-width: $break-extra-small) {
+    html,
+    body {
+        font-size: $baseFontSize;
+    }
+}
+
+/*
+*       Text Styles
+*/
+h1 > small,
+p.large,
+.primary--button {
+    line-height: 1.25em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    span {
+        color: $primaryAccentColor;
+    }
+}
+p {
+    &.semi--strong {
+        font-weight: 600;
+    }
+    &.medium {
+        font-size: 1.25em;
+    }
+    &.large{
+        font-size: 1.75em;
+    }
+}
+span.grey {
+    color: $secondaryTextColor;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Halant', serif;
+    font-weight: 600;
+    &.secondary--title {
+        font-size: 1.65em;
+        font-weight: 400;
+        span {
+            color: $secondaryAccentColor;
+        }
+        @media (min-width: $break-extra-small) {
+            font-size: 1.5em;
+        }
+        @media (min-width: $break-small) {
+            font-size: 1.65em;
+        }
+        @media (min-width: $break-large) {
+            font-size: 2.25em;
+        }
+    }
+    &.large {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: $break-extra-large) {
+    h1 {
+        font-size: 3.75em;
+    }
+}
+
+/*
+*       Components Styels
+*/
+.primary--button {
+    color: $primaryTextColor;
+    border: 3px solid $primaryAccentColor;
+    border-radius: 0px;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    &:hover {
+        background-color: $primaryAccentColor;
+        color: $primaryBackgroundColor;
+    }
+}
+
+/*
+*       Section Styles
+*/
+.header--container {
+    background-color: $primaryBackgroundColor;
+    color: $primaryTextColor;
+    .navbar--main {
+        background-color: $primaryBackgroundColor;
+        padding: 1em 8.333333%;
+        z-index: 1024;
+        &.transition__active {
+            transition: opacity 0.3s ease;
+        }
+        &.hidden {
+            opacity: 0;
+        }
+        &.notHidden {
+            opacity: 1;
+        }
+    }
+    .navbar--social {
+        li {
+            img {
+                width: 2em;
+                height: 2em;
+            }
+        }
+    }
+    .hero {
+        padding: 0 8.333333%;
+        align-items: center;
+        hr {
+            border-top: 3px solid $primaryTextColor;
+            width: 6em;
+            margin: 2em 0 4em;
+        }
+        div {
+            z-index: 0;
+            button {
+                width: 100%;
+            }
+        }
+        div:nth-child(1)::before {
+            background-image: url('../img/hiram-gonzalez.png');
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: contain;
+            position: absolute;
+            content: '';
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.2;
+        }
+        ul {
+            li {
+                padding: 2em 1em 0;
+            }
+        }
+        &.container--padding__top {
+            padding-top: 5em;
+        }
+
+        @media (min-width: $break-medium) {
+            div {
+                button {
+                    width: auto;
+                }
+            }
+            ul {
+                padding-bottom: 8em;
+                li {
+                    padding: 2em 0 0;
+                }
+            }
+        }
+        @media (min-width: $break-large) {
+            min-height: 40em;
+
+            div:nth-child(1)::before {
+                background: unset;
+            }
+
+            div:nth-child(2)::before {
+                background-image: url('../img/hiram-gonzalez.png');
+                background-repeat: no-repeat;
+                background-position: bottom;
+                position: relative;
+                content: '';
+                top: 0;
+                width: 100%;
+                min-height: 40em;
+                z-index: -1;
+            }
+        }
+        @media (min-width: $break-extra-large) {
+            min-height: 80vh;
+            div:nth-child(2)::before {
+                min-height: 80vh;
+            }
+        }
+    }
+}
+
+.about--section {
+    padding: 7em 0;
+    img {
+        max-width: 88%;
+    }
+    .text {
+        padding: 2em 2.5em;
+    }
+
+    @media (min-width: $break-medium) {
+        padding: 9em 0;
+        .text {
+            padding: 2em 0;
+        }
+    }
+
+    @media (min-width: $break-large) {
+        img {
+            padding-right: 7em;
+        }
+    }
+}
+
+.skill--section{
+    background-image: url('../img/fabian-grohs-P2SkP_PXhlU-unsplash.jpg');
+    background-size: cover;
+    color: $primaryTextColor;
+    hr{
+        border-top: 1px solid $primaryTextColor;
+        margin: 3em;
+    }
+    ul>li{
+        padding: 0 1em;
+    }
+}
