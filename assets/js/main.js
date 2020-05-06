@@ -1,8 +1,8 @@
 var mainNavbar = document.getElementById('main-navbar');
 var hero = document.getElementById('hero');
-var button = document.getElementById('holis');
+var secction = document.getElementById('trigger');
 
-var stickyTriggerPoint = button.offsetTop;
+var stickyTriggerPoint = secction.offsetTop;
 var heroTriggerPoint = hero.offsetTop;
 
 window.onscroll = () => {
