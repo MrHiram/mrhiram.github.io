@@ -31,8 +31,11 @@ p {
     &.medium {
         font-size: 1.25em;
     }
-    &.large{
+    &.large {
         font-size: 1.75em;
+    }
+    &.serif {
+        font-family: 'Halant', serif;
     }
 }
 span.grey {
@@ -41,7 +44,8 @@ span.grey {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Halant', serif;
     font-weight: 600;
     &.secondary--title {
@@ -62,6 +66,9 @@ h3 {
     }
     &.large {
         font-size: 3em;
+    }
+    &.sans--serif {
+        font-family: 'Raleway', sans-serif;
     }
 }
 
@@ -85,6 +92,15 @@ h3 {
         color: $primaryBackgroundColor;
     }
 }
+.padding--container {
+    padding: 0 8.333333%;
+}
+.mobile--padding__none {
+    padding: none !important;
+    @media (min-width: $break-extra-large) {
+        padding: 0 8.333333%;
+    }
+}
 
 /*
 *       Section Styles
@@ -92,6 +108,10 @@ h3 {
 .header--container {
     background-color: $primaryBackgroundColor;
     color: $primaryTextColor;
+    .logo {
+        border: 2px solid $primaryTextColor;
+        padding: 0.25em 0.75em;
+    }
     .navbar--main {
         background-color: $primaryBackgroundColor;
         padding: 1em 8.333333%;
@@ -115,7 +135,6 @@ h3 {
         }
     }
     .hero {
-        padding: 0 8.333333%;
         align-items: center;
         hr {
             border-top: 3px solid $primaryTextColor;
@@ -214,15 +233,100 @@ h3 {
     }
 }
 
-.skill--section{
-    background-image: url('../img/fabian-grohs-P2SkP_PXhlU-unsplash.jpg');
+.background--section {
+    &.skills--bg{
+        background-image: url('../img/fabian-grohs-P2SkP_PXhlU-unsplash.jpg');
+    }
+    &.experience--bg{
+        background-image: url('../img/volcan-background.png');
+    }
     background-size: cover;
     color: $primaryTextColor;
-    hr{
+    .skill--deck {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        div {
+            height: 7em;
+            width: 4em;
+            margin: 1em;
+            img {
+                height: 65%;
+            }
+            @media (min-width: $break-large) {
+                height: 12em;
+                width: 8em;
+                margin: 2em;
+                p {
+                    font-size: 1.25em;
+                    padding: 1em 0 0 0;
+                }
+            }
+            @media (min-width: $break-extra-large) {
+                height: 13em;
+                width: 10em;
+                margin: 2em;
+            }
+        }
+    }
+    hr {
         border-top: 1px solid $primaryTextColor;
         margin: 3em;
     }
-    ul>li{
-        padding: 0 1em;
+    ul > li {
+        width: 50%;
+        @media (min-width: $break-medium) {
+            width: auto;
+            padding: 1em;
+        }
+    }
+}
+
+.project--section {
+    .projects--deck {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .project--card {
+            display: flex;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 23em;
+            height: 25em;
+            justify-content: center;
+            position: relative;
+            .content {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                opacity: 1;
+                background-color: rgba(
+                    $color: $secondaryBackgroundColor,
+                    $alpha: 0.7
+                );
+                transition: all 0.5s ease-in-out;
+            }
+            @media (min-width: $break-large) {
+                .content {
+                    opacity: 0;
+                }
+                &:hover {
+                    .content {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        @media (min-width: $break-extra-large) {
+            flex-wrap: nowrap;
+
+            .project--card {
+                &.lower {
+                    top: 5em;
+                }
+            }
+        }
     }
 }
