@@ -1,0 +1,22 @@
+{
+    "name": "personal-website",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MrHiram/Personal-WebSite.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MrHiram/Personal-WebSite/issues"
+    },
+    "homepage": "https://github.com/MrHiram/Personal-WebSite#readme",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-replace": "^1.0.0",
+        "gulp-sass": "^4.1.0"
+    }
+}
