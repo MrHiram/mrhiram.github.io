@@ -22,7 +22,7 @@
                 class="navbar navbar-expand-lg navbar-dark navbar--main"
                 id="main-navbar"
             >
-                <a class="navbar-brand logo" href="#">HGC</a>
+                <a class="navbar-brand logo" onclick="scrollTowards('hero')">HGC</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -39,28 +39,28 @@
                     id="navbarText"
                 >
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">About</a>
+                        <li id="navItemAbout" class="nav-item active">
+                            <a class="nav-link" onclick="scrollTowards('trigger')">About</a>
                         </li>
-                        <li class="nav-item px-lg-3">
-                            <a class="nav-link" href="#">Skills</a>
+                        <li id="navItemSkills" class="nav-item px-lg-3">
+                            <a class="nav-link" onclick="scrollTowards('skills')">Skills</a>
                         </li>
-                        <li class="nav-item px-lg-3">
-                            <a class="nav-link" href="#">Projects</a>
+                        <li id="navItemProjects" class="nav-item px-lg-3">
+                            <a class="nav-link" onclick="scrollTowards('projects')">Projects</a>
                         </li>
-                        <li class="nav-item px-lg-3">
-                            <a class="nav-link" href="#">Experience</a>
+                        <li id="navItemExperience" class="nav-item px-lg-3">
+                            <a class="nav-link" onclick="scrollTowards('experience')">Experience</a>
                         </li>
-                        <li class="nav-item px-lg-3">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">English</a>
+                        <li id="navItemContact" class="nav-item px-lg-3">
+                            <a class="nav-link" onclick="scrollTowards('contact')">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <div class="d-flex flex-column flex-md-row hero padding--container" id="hero">
+            <div
+                class="d-flex flex-column flex-md-row hero padding--container"
+                id="hero"
+            >
                 <div class="col-lg-6 p-0 py-5">
                     <h1>
                         <small>Hello, my name is</small><br />Hiram González
@@ -80,22 +80,33 @@
                         class="d-flex flex-md-column navbar--social list-unstyled p-0"
                     >
                         <li>
-                            <a href=""
+                            <a
+                                href="https://www.linkedin.com/in/hiram-gonz%C3%A1lez/"
+                                target="_blank"
+                                rel="noopener"
                                 ><img
                                     src="assets/img/linkedin-in-brands.svg"
-                                    alt=""
+                                    alt="LinkedIn logo"
                             /></a>
                         </li>
                         <li>
-                            <a href=""
+                            <a
+                                href="https://www.facebook.com/hiram.gonzalez.castro"
+                                target="_blank"
+                                rel="noopener"
                                 ><img
                                     src="assets/img/facebook-f-brands.svg"
-                                    alt=""
+                                    alt="Facebook logo"
                             /></a>
                         </li>
                         <li>
-                            <a href=""
-                                ><img src="assets/img/github-brands.svg" alt=""
+                            <a
+                                href="https://github.com/MrHiram"
+                                target="_blank"
+                                rel="noopener"
+                                ><img
+                                    src="assets/img/github-brands.svg"
+                                    alt="Github logo"
                             /></a>
                         </li>
                     </ul>
@@ -103,7 +114,7 @@
             </div>
         </header>
         <section>
-            <div class="d-flex flex-wrap about--section" id="trigger">
+            <div id="trigger" class="d-flex flex-wrap about--section">
                 <div
                     class="d-flex justify-content-center justify-content-md-end col-12 col-md-6"
                 >
@@ -130,7 +141,7 @@
                     </p>
                 </div>
             </div>
-            <div class="background--section skills--bg py-5">
+            <div id="skills" class="background--section skills--bg py-5">
                 <div class="padding--container text-center py-5">
                     <h3 class="large">
                         <span class="grey">02 </span>My Skills
@@ -138,63 +149,105 @@
                     <p class="medium">The skills i have acquired</p>
                     <div class="skill--deck">
                         <div>
-                            <img src="assets/img/js-square-brands.svg" alt="Java Script Logo">
+                            <img
+                                src="assets/img/js-square-brands.svg"
+                                alt="Java Script Logo"
+                            />
                             <p>Java Script</p>
                         </div>
                         <div>
-                            <img src="assets/img/php-brands.svg" alt="PHP Logo">
+                            <img
+                                src="assets/img/php-brands.svg"
+                                alt="PHP Logo"
+                            />
                             <p>PHP</p>
                         </div>
                         <div>
-                            <img src="assets/img/html5-brands.svg" alt="HTML5 Logo">
+                            <img
+                                src="assets/img/html5-brands.svg"
+                                alt="HTML5 Logo"
+                            />
                             <p>HTML 5</p>
                         </div>
                         <div>
-                            <img src="assets/img/css3-alt-brands.svg" alt="CSS3 Logo">
+                            <img
+                                src="assets/img/css3-alt-brands.svg"
+                                alt="CSS3 Logo"
+                            />
                             <p>CSS 3</p>
                         </div>
                         <div>
-                            <img src="assets/img/java-brands.svg" alt="Java Logo">
+                            <img
+                                src="assets/img/java-brands.svg"
+                                alt="Java Logo"
+                            />
                             <p>Java</p>
                         </div>
                         <div>
-                            <img src="assets/img/wordpress-brands.svg" alt="Wordpress Logo">
+                            <img
+                                src="assets/img/wordpress-brands.svg"
+                                alt="Wordpress Logo"
+                            />
                             <p>Wordpress (CMS)</p>
                         </div>
                         <div>
-                            <img src="assets/img/react-brands.svg" alt="React Logo">
+                            <img
+                                src="assets/img/react-brands.svg"
+                                alt="React Logo"
+                            />
                             <p>React JS & Native</p>
                         </div>
                         <div>
-                            <img src="assets/img/bootstrap-brands.svg" alt="Bootstrap Logo">
+                            <img
+                                src="assets/img/bootstrap-brands.svg"
+                                alt="Bootstrap Logo"
+                            />
                             <p>bootstrap</p>
                         </div>
                         <div>
-                            <img src="assets/img/sass-brands.svg" alt="Sass Logo">
+                            <img
+                                src="assets/img/sass-brands.svg"
+                                alt="Sass Logo"
+                            />
                             <p>Sass</p>
                         </div>
                         <div>
-                            <img src="assets/img/laravel-brands.svg" alt="Laravel Logo">
+                            <img
+                                src="assets/img/laravel-brands.svg"
+                                alt="Laravel Logo"
+                            />
                             <p>Laravel</p>
                         </div>
                         <div>
-                            <img src="assets/img/npm-brands.svg" alt="NPM Logo">
+                            <img
+                                src="assets/img/npm-brands.svg"
+                                alt="NPM Logo"
+                            />
                             <p>NPM</p>
                         </div>
                         <div>
-                            <img src="assets/img/git-brands.svg" alt="Git Logo">
+                            <img
+                                src="assets/img/git-brands.svg"
+                                alt="Git Logo"
+                            />
                             <p>Git</p>
                         </div>
                         <div>
-                            <img src="assets/img/users-solid.svg" alt="SCRUM">
+                            <img src="assets/img/users-solid.svg" alt="SCRUM" />
                             <p>SCRUM</p>
                         </div>
                         <div>
-                            <img src="assets/img/adobe-brands.svg" alt="Adobe Logo">
+                            <img
+                                src="assets/img/adobe-brands.svg"
+                                alt="Adobe Logo"
+                            />
                             <p>Adobe</p>
                         </div>
                         <div>
-                            <img src="assets/img/figma-brands.svg" alt="figma-brands">
+                            <img
+                                src="assets/img/figma-brands.svg"
+                                alt="figma-brands"
+                            />
                             <p>Figma</p>
                         </div>
                     </div>
@@ -202,7 +255,9 @@
                     <h3 class="large">
                         Soft Skills
                     </h3>
-                    <ul class="d-flex flex-wrap list-unstyled justify-content-around pt-5">
+                    <ul
+                        class="d-flex flex-wrap list-unstyled justify-content-around pt-5"
+                    >
                         <li>
                             <p class="semi--strong medium">Fast learning</p>
                         </li>
@@ -222,57 +277,180 @@
                             <p class="semi--strong medium">Organized</p>
                         </li>
                     </ul>
-                    <p class="semi--strong large pb-5">Love Learning from Challanges</p>
+                    <p class="semi--strong large pb-5">
+                        Love Learning from Challanges
+                    </p>
                 </div>
             </div>
-            <div class="project--section py-5">
+            <div id="projects" class="project--section py-5">
                 <div class="padding--container text-center py-5">
-                    <h3 class="large">
-                        <span class="grey">03 </span>Projects
-                    </h3>
-                    <p class="medium">These are some of my favorite projects that are currently online</p>
-                    
+                    <h3 class="large"><span class="grey">03 </span>Projects</h3>
+                    <p class="medium">
+                        These are some of my favorite projects that are
+                        currently online
+                    </p>
+
                     <div class="d-flex projects--deck text-white pb-0 pb-lg-5">
-                        <div class="project--card my-4 lower" style="background-image: url(assets/img/proyecto-barberia-clandestina.png);">
+                        <div
+                            class="project--card my-4 lower"
+                            style="
+                                background-image: url(assets/img/proyecto-barberia-clandestina.png);
+                            "
+                        >
                             <div class="content">
-                                <p class="serif medium semi--strong">Appointment Website</p>
-                                <h4 class="sans--serif mb-4">Barbería Clandestina</h4>
-                                <a class="btn  primary--button w-75" href="https://barberiaclandestina.com/" target="_blank" rel="noopener">View More</a>
+                                <p class="serif medium semi--strong">
+                                    Appointment Website
+                                </p>
+                                <h4 class="sans--serif mb-4">
+                                    Barbería Clandestina
+                                </h4>
+                                <a
+                                    class="btn primary--button w-75"
+                                    href="https://barberiaclandestina.com/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >View More</a
+                                >
                             </div>
                         </div>
-                        <div class="project--card my-4" style="background-image: url(assets/img/proyecto-ucr.png);">
+                        <div
+                            class="project--card my-4"
+                            style="
+                                background-image: url(assets/img/proyecto-ucr.png);
+                            "
+                        >
                             <div class="content">
-                                <p class="serif medium semi--strong">Official Website</p>
-                                <h4 class="sans--serif mb-4">Informática y Tecnología Multimedia</h4>
-                                <a class="btn  primary--button w-75" href="https://google.com/" target="_blank" rel="noopener">View More</a>
+                                <p class="serif medium semi--strong">
+                                    Official Website
+                                </p>
+                                <h4 class="sans--serif mb-4">
+                                    Informática y Tecnología Multimedia
+                                </h4>
+                                <a
+                                    class="btn primary--button w-75"
+                                    href="https://google.com/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >View More</a
+                                >
                             </div>
                         </div>
-                        <div class="project--card my-4 lower" style="background-image: url(assets/img/proyecto-gusticos-lomel.png);">
+                        <div
+                            class="project--card my-4 lower"
+                            style="
+                                background-image: url(assets/img/proyecto-gusticos-lomel.png);
+                            "
+                        >
                             <div class="content">
-                                <p class="serif medium semi--strong">Restaurant Website</p>
-                                <h4 class="sans--serif mb-4">Restaurant Gusticos Lomel</h4>
-                                <a class="btn  primary--button w-75" href="https://gusticoslomel.com/" target="_blank" rel="noopener">View More</a>
+                                <p class="serif medium semi--strong">
+                                    Restaurant Website
+                                </p>
+                                <h4 class="sans--serif mb-4">
+                                    Restaurant Gusticos Lomel
+                                </h4>
+                                <a
+                                    class="btn primary--button w-75"
+                                    href="https://gusticoslomel.com/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >View More</a
+                                >
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="background--section experience--bg py-5">
+
+            <div id="experience" class="background--section experience--bg py-5">
                 <div class="padding--container text-center py-5">
                     <h3 class="large">
                         <span class="grey">03 </span>Experience
                     </h3>
-                    <div class="my-5 py-5">
-                        <p>holas</p>
+                    <div
+                        class="my-5 d-flex justify-content-around experience--text"
+                    >
+                        <div class="text-left">
+                            <h5 class="semi--strong medium">
+                                <span class="grey">01</span><br />
+                                University of Costa Rica
+                            </h5>
+                            <p>
+                                Assistant, as a web Developer <br />
+                                Mar, 2020 - Present
+                            </p>
+                        </div>
+                        <div class="text-left">
+                            <h5 class="semi--strong medium">
+                                <span class="grey">02</span><br />
+                                Barbería Clandestina
+                            </h5>
+                            <p>
+                                Front-end develper & support <br />
+                                Jan, 2020 - Feb, 2020
+                            </p>
+                        </div>
+                        <div class="text-left">
+                            <h5 class="semi--strong medium">
+                                <span class="grey">03</span><br />Gusticos Lomel
+                            </h5>
+                            <p>
+                                Front-end developer & support <br />
+                                Dec, 2019 - Jan, 2020
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer></footer>
+        <footer id="contact" class="footer--container">
+            <div class="padding--container py-5">
+                <h3 class="large text-center">Contact Me</h3>
+                <div class="d-flex flex-wrap justify-content-around">
+                    <div class="col-12 col-md-3 flex-column py-4">
+                        <h5>Social media</h5>
+                        <div class="d-flex navbar--social">
+                            <a
+                                href="https://www.linkedin.com/in/hiram-gonz%C3%A1lez/"
+                                target="_blank"
+                                rel="noopener"
+                                class="py-3 pr-2"
+                                ><img
+                                    src="assets/img/linkedin-in-brands.svg"
+                                    alt="LinkedIn logo"
+                            /></a>
+                            <a
+                                href="https://www.facebook.com/hiram.gonzalez.castro"
+                                target="_blank"
+                                rel="noopener"
+                                class="py-3 px-2"
+                                ><img
+                                    src="assets/img/facebook-f-brands.svg"
+                                    alt="Facebook logo"
+                            /></a>
+                            <a
+                                href="https://github.com/MrHiram"
+                                target="_blank"
+                                rel="noopener"
+                                class="py-3 pl-2"
+                                ><img
+                                    src="assets/img/github-brands.svg"
+                                    alt="Github logo"
+                            /></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 py-4">
+                        <h5>Email</h5>
+                        <a href="mailto:mrhiram1@gmail.com" class="link--text">mrhiram1@gmail.com</a>
+                    </div>
+                    <div class="col-12 col-md-3 py-4">
+                        <h5>Phone</h5>
+                        <a href="tel:+50684220599" class="link--text">(+506)8422 0599</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script
-            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
             crossorigin="anonymous"
         ></script>
         <script

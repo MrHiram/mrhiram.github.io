@@ -24,7 +24,8 @@ p.large,
         color: $primaryAccentColor;
     }
 }
-p {
+p,
+h5 {
     &.semi--strong {
         font-weight: 600;
     }
@@ -38,7 +39,8 @@ p {
         font-family: 'Halant', serif;
     }
 }
-span.grey {
+span.grey,
+p.grey {
     color: $secondaryTextColor;
 }
 
@@ -72,6 +74,16 @@ h4 {
     }
 }
 
+
+.link--text{
+    cursor: pointer;
+    color: $primaryTextColor;
+    &:hover{
+        color: $secondaryAccentColor;
+        text-decoration: none;
+    }
+}
+
 @media (min-width: $break-extra-large) {
     h1 {
         font-size: 3.75em;
@@ -102,6 +114,13 @@ h4 {
     }
 }
 
+.navbar--social {
+    img {
+        width: 2em;
+        height: 2em;
+    }
+}
+
 /*
 *       Section Styles
 */
@@ -124,14 +143,6 @@ h4 {
         }
         &.notHidden {
             opacity: 1;
-        }
-    }
-    .navbar--social {
-        li {
-            img {
-                width: 2em;
-                height: 2em;
-            }
         }
     }
     .hero {
@@ -234,11 +245,12 @@ h4 {
 }
 
 .background--section {
-    &.skills--bg{
+    &.skills--bg {
         background-image: url('../img/fabian-grohs-P2SkP_PXhlU-unsplash.jpg');
     }
-    &.experience--bg{
+    &.experience--bg {
         background-image: url('../img/volcan-background.png');
+        background-position: bottom;
     }
     background-size: cover;
     color: $primaryTextColor;
@@ -279,6 +291,9 @@ h4 {
             width: auto;
             padding: 1em;
         }
+    }
+    .experience--text {
+        padding: 10rem 0;
     }
 }
 
@@ -329,4 +344,9 @@ h4 {
             }
         }
     }
+}
+
+.footer--container {
+    background-color: $secondaryBackgroundColor;
+    color: $primaryTextColor;
 }
