@@ -45,7 +45,6 @@ stickyDetect = () => {
 function scroll() {
     $(document).on('scroll', function () {
         let posY = $(document).scrollTop();
-        console.log(posY);
         $('#navItemAbout').removeClass('active');
         $('#navItemSkills').removeClass('active');
         $('#navItemProjects').removeClass('active');
