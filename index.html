@@ -3,9 +3,17 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>MrHiram</title>
-        <link rel="icon" type="image/svg+xml" href="assets/img/user-tie-solid.svg" sizes="any">
-        <meta name="description" content="Hiram González Castro, Web Developer Costa Rica">
+        <title>Hiram González Castro</title>
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="assets/img/user-tie-solid.svg"
+            sizes="any"
+        />
+        <meta
+            name="description"
+            content="Hello, I'm Hiram González Castro. Web Developer from Costa Rica. I have developed several projects using Front End and Back End Technologies."
+        />
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -17,6 +25,20 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="assets/css/styles.css" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-155980751-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-155980751-1');
+        </script>
     </head>
     <body>
         <header class="header--container" id="header--container">
@@ -156,10 +178,10 @@
                     <p class="semi--strong medium">
                         <span class="grey">01 </span>About me
                     </p>
-                    <h3 class="secondary--title">
+                    <h2 class="secondary--title">
                         My primary focus has been<br />
                         to become a <span>Web Full-Stack</span>
-                    </h3>
+                    </h2>
                     <p>
                         Currently I'm studying Computing and Multimedia
                         Technology at <br class="d-none d-lg-block" />University
@@ -173,9 +195,9 @@
             </div>
             <div id="skills" class="background--section skills--bg py-5">
                 <div class="padding--container text-center py-5">
-                    <h3 class="large">
+                    <h2 class="large">
                         <span class="grey">02 </span>My Skills
-                    </h3>
+                    </h2>
                     <p class="medium">The skills i have acquired</p>
                     <div class="skill--deck">
                         <div>
@@ -314,7 +336,7 @@
             </div>
             <div id="projects" class="project--section py-5">
                 <div class="padding--container text-center py-5">
-                    <h3 class="large"><span class="grey">03 </span>Projects</h3>
+                    <h2 class="large"><span class="grey">03 </span>Projects</h2>
                     <p class="medium">
                         These are some of my favorite projects that are
                         currently online
@@ -396,11 +418,11 @@
                 class="background--section experience--bg py-5"
             >
                 <div class="padding--container text-center py-5">
-                    <h3 class="large">
+                    <h2 class="large">
                         <span class="grey">03 </span>Experience
-                    </h3>
+                    </h2>
                     <div
-                        class="my-5 d-flex justify-content-around experience--text"
+                        class="my-5 d-flex flex-column flex-md-row justify-content-around experience--text"
                     >
                         <div class="text-left">
                             <h5 class="semi--strong medium">
@@ -437,9 +459,9 @@
         </section>
         <footer id="contact" class="footer--container">
             <div class="padding--container py-5">
-                <h3 class="large text-center">Contact Me</h3>
+                <h2 class="large text-center">Contact Me</h2>
                 <div class="d-flex flex-wrap justify-content-around">
-                    <div class="col-12 col-md-3 flex-column py-4">
+                    <div class="col-12 flex-column py-4">
                         <h5>Social media</h5>
                         <div class="d-flex navbar--social">
                             <a
@@ -470,18 +492,6 @@
                                     alt="Github logo"
                             /></a>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-3 py-4">
-                        <h5>Email</h5>
-                        <a href="mailto:mrhiram1@gmail.com" class="link--text"
-                            >mrhiram1@gmail.com</a
-                        >
-                    </div>
-                    <div class="col-12 col-md-3 py-4">
-                        <h5>Phone</h5>
-                        <a href="tel:+50684220599" class="link--text"
-                            >(+506)8422 0599</a
-                        >
                     </div>
                 </div>
             </div>
